@@ -44,7 +44,9 @@ const TodoContainer = () => {
     setTodos(
       todos.map((todo) => {
         if (todo.id === id) {
+          /* eslint-disable no-param-reassign */
           todo.title = updatedTitle;
+          /* eslint-enable no-param-reassign */
         }
         return todo;
       }),
